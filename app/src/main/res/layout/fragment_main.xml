@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.mainScreen.MainFragment">
+
+    <EditText
+        android:id="@+id/nameOfCountryET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_request_hint"
+        app:layout_constraintEnd_toStartOf="@id/getButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameOfCountryET"
+        app:layout_constraintBottom_toBottomOf="@id/nameOfCountryET" />
+
+    <TextView
+        android:id="@+id/savedResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfCountryET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/toWebViewButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toWebViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="до веб вью"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/savedResultTextView" />
+
+    <Button
+        android:id="@+id/toGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="до гри"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toWebViewButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

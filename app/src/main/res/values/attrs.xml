@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GameView">
+        <attr name="ballColorRed" format="color"/>
+        <attr name="ballColorGreen" format="color"/>
+        <attr name="ballColorBlue" format="color"/>
+        <attr name="ballColorYellow" format="color"/>
+        <attr name="ballColorPurple" format="color"/>
+        <attr name="ballColorPink" format="color"/>
+    </declare-styleable>
+</resources>

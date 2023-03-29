@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestAppForSmartApps</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_level">Оберіть рівень</string>
+    <string name="test_level">Тестовий рівень</string>
+    <string name="easy_level">Легкий рівень</string>
+    <string name="middle_level">Середній рівень</string>
+    <string name="hard_level">Важкий рівень</string>
+    <string name="retry">ще раз</string>
+    <string name="your_score">Ваш рахунок:</string>
+    <string name="name_request_hint">введіть назву країни англійською</string>
+</resources>
